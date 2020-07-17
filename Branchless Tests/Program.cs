@@ -39,7 +39,7 @@ namespace Branchless_Tests
                     {
                         if (A[i] != C[i])
                         {
-                            Console.WriteLine($"sumtingwong | i:{i,6} | C:{C[i],6} | A:{A[i],6} | B:{B[i]}");
+                            Console.WriteLine($"bad code! | i:{i,6} | C:{C[i],6} | A:{A[i],6} | B:{B[i]}");
                             break;
                         }
                     }
@@ -65,7 +65,7 @@ namespace Branchless_Tests
                     {
                         if (A[i] != C[i])
                         {
-                            Console.WriteLine($"sumtingwong | i:{i,6} | C:{C[i],6} | A:{A[i],6} | B:{B[i]}");
+                            Console.WriteLine($"bad code! | i:{i,6} | C:{C[i],6} | A:{A[i],6} | B:{B[i]}");
                             break;
                         }
                     }
@@ -92,7 +92,7 @@ namespace Branchless_Tests
                     {
                         if (A[i] != C[i])
                         {
-                            Console.WriteLine($"sumtingwong | i:{i,6} | C:{C[i],6} | A:{A[i],6} | B:{B[i]}");
+                            Console.WriteLine($"bad code! | i:{i,6} | C:{C[i],6} | A:{A[i],6} | B:{B[i]}");
                             break;
                         }
                     }
@@ -118,7 +118,7 @@ namespace Branchless_Tests
                     {
                         if (A[i] != C[i])
                         {
-                            Console.WriteLine($"sumtingwong | i:{i,6} | C:{C[i],6} | A:{A[i],6} | B:{B[i]}");
+                            Console.WriteLine($"bad code! | i:{i,6} | C:{C[i],6} | A:{A[i],6} | B:{B[i]}");
                             break;
                         }
                     }
@@ -152,7 +152,7 @@ namespace Branchless_Tests
                         {
                             if (A[i] != C[i])
                             {
-                                Console.WriteLine($"sumtingwong | i:{i,6} | C:{C[i],6} | A:{A[i],6} | B:{B[i]}");
+                                Console.WriteLine($"bad code! | i:{i,6} | C:{C[i],6} | A:{A[i],6} | B:{B[i]}");
                                 break;
                             }
                         }
