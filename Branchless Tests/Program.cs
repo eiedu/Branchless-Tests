@@ -33,17 +33,17 @@ namespace Branchless_Tests
                     A[i] = A[i] + 128 * (A[i] > 255 ? 1 : 0) - 128 * (A[i] > 127 ? 1 : 0);
                 }
                 Average += DateTime.Now - StartTime;
-                //if (j == 0)
-                //{
-                //    for (int i = 0; i < 1000000; i++)
-                //    {
-                //        if (A[i] != C[i])
-                //        {
-                //            Console.WriteLine($"sumtingwong | i:{i,6} | C:{C[i],6} | A:{A[i],6} | B:{B[i]}");
-                //            break;
-                //        }
-                //    }
-                //}
+                if (j == 0)
+                {
+                    for (int i = 0; i < 1000000; i++)
+                    {
+                        if (A[i] != C[i])
+                        {
+                            Console.WriteLine($"sumtingwong | i:{i,6} | C:{C[i],6} | A:{A[i],6} | B:{B[i]}");
+                            break;
+                        }
+                    }
+                }
             }
             Average /= 100;
             Console.WriteLine($"Branched in: {Average.TotalMilliseconds}ms");
@@ -59,17 +59,17 @@ namespace Branchless_Tests
                     A[i] -= 128 * (((A[i] & 128) >> 7) - ((A[i] & 128) >> 7) * ((A[i] & 256) >> 8));
                 }
                 Average += DateTime.Now - StartTime;
-                //if (j == 0)
-                //{
-                //    for (int i = 0; i < 1000000; i++)
-                //    {
-                //        if (A[i] != C[i])
-                //        {
-                //            Console.WriteLine($"sumtingwong | i:{i,6} | C:{C[i],6} | A:{A[i],6} | B:{B[i]}");
-                //            break;
-                //        }
-                //    }
-                //}
+                if (j == 0)
+                {
+                    for (int i = 0; i < 1000000; i++)
+                    {
+                        if (A[i] != C[i])
+                        {
+                            Console.WriteLine($"sumtingwong | i:{i,6} | C:{C[i],6} | A:{A[i],6} | B:{B[i]}");
+                            break;
+                        }
+                    }
+                }
             }
             Average /= 100;
             Console.WriteLine($"Branchless in: {Average.TotalMilliseconds}ms");
@@ -86,17 +86,17 @@ namespace Branchless_Tests
                     A[i] -= (A[i] & ((A[i] & 128) ^ ((A[i] & 256) >> 1)));
                 }
                 Average += DateTime.Now - StartTime;
-                //if (j == 0)
-                //{
-                //for (int i = 0; i < 1000000; i++)
-                //    {
-                //        if (A[i] != C[i])
-                //        {
-                //            Console.WriteLine($"sumtingwong | i:{i,6} | C:{C[i],6} | A:{A[i],6} | B:{B[i]}");
-                //            break;
-                //        }
-                //    }
-                //}
+                if (j == 0)
+                {
+                    for (int i = 0; i < 1000000; i++)
+                    {
+                        if (A[i] != C[i])
+                        {
+                            Console.WriteLine($"sumtingwong | i:{i,6} | C:{C[i],6} | A:{A[i],6} | B:{B[i]}");
+                            break;
+                        }
+                    }
+                }
             }
             Average /= 100;
             Console.WriteLine($"Branchless xor in: {Average.TotalMilliseconds}ms");
